@@ -99,7 +99,7 @@ siguientes:
 Escribir un programa que pregunte al usuario su renta anual y muestre por pantalla el 
 tipo impositivo que le corresponde. */
 
-let rentaAnual = prompt("Ingrese su renta anual: ")
+/* let rentaAnual = prompt("Ingrese su renta anual: ")
 
 if (rentaAnual < 10000) {
     alert("Le corresponde 5% de tipo impositivo")
@@ -111,7 +111,7 @@ if (rentaAnual < 10000) {
     alert("Le corresponde 30% de tipo impositivo")
 } else if (rentaAnual >= 60000) {
     alert("Le corresponde 45% de tipo impositivo")
-}
+} */
 
 //EJERCICIO 8
 /* Escribir un programa para una empresa que tiene salas de juegos para todas las 
@@ -119,5 +119,23 @@ edades y quiere calcular de forma automática el precio que debe cobrar a sus cl
 por entrar. El programa debe preguntar al usuario la edad del cliente y mostrar el 
 precio de la entrada. Si el cliente es menor de 4 años puede entrar gratis, si tiene entre
 4 y 12 años debe pagar 5€, si tiene entre 13 y 17 debe pagar 8€ y si es mayor de 18 
-años, 10€. */
+años, 10€. 
 
+        EDAD                |      COSTO
+    Menor de 4 años         |       0€
+Entre 4 años y 12 años      |       5€
+Entre 13 años y 17 años     |       8€
+    Mayor de 18 años        |       10€
+*/
+
+let edad = prompt("Ingrese su edad")
+
+if (edad < 4) {
+    alert("El ingreso es gratuito")
+} else if (edad >= 4 && edad <= 12) {
+    alert("Debe pagar 5€")
+} else if (edad > 12 && edad <= 17) {
+    alert("Debe pagar 8€")
+} else if (edad >= 18) {
+    alert("Debe pagar 10€")
+}
