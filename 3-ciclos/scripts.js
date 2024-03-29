@@ -100,3 +100,11 @@ let numero = prompt("Ingrese un número entero")
 //Dividir el número elegido entre si mismo y todos los números previos hasta llegar a 1
 //Sólo si la división entre si mismo y 1 es exacta, el número es primo
 //Si algún otro número resulta en división exacta, no es primo
+
+for (i = numero-1; i > 1; i--) {
+    if(numero % i == 0) {
+        console.log("El numero no es primo")
+        alert("El numero no es primo")
+        break;
+    }
+}
