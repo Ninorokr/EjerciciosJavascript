@@ -120,7 +120,7 @@ la nota que ha sacado en cada asignatura y elimine del array las asignaturas
 aprobadas. Al final el programa debe mostrar por pantalla las asignaturas que el 
 usuario tiene que repetir. */
 
-const notaReprobatoria = 11
+/* const notaReprobatoria = 11
 
 let objAsignaturas = [
     {nom: 'Matemáticas', nota: 0},
@@ -145,16 +145,58 @@ for (const objAsignatura of objAsignaturas) {
     cursos = cursos + objAsignatura.nom + ", "
 }
 
-alert("Los cursos a repetir son " + cursos)
+alert("Los cursos a repetir son " + cursos) */
     
 //EJERCICIO 7
 /* 7. Escribir un programa que almacene el abecedario en un array, elimine las letras 
 que ocupen posiciones múltiplos de 3, y muestre por pantalla la lista resultante. */
+
+/* let abecedario = ""
+for (i = 65; i < 91; i++) {
+    if (i % 3 == 0) {
+        console.log(String.fromCharCode(i))
+        continue;
+    }
+    abecedario += String.fromCharCode(i) + " - "
+}
+alert(abecedario) */
             
 //EJERCICIO 8
 /* 8. Escribir un programa que pida al usuario una lista de letras y muestre por pantalla 
 el número de veces que ingresó cada vocal. */
 
+/* let letras = prompt("Ingrese sentencia a analizar")
+
+let a = 0, e = 0, i = 0, o = 0, u = 0
+for (j = 0; j < letras.length; j++) {
+    switch(letras[j]) {
+        case 'A': a++; break
+        case 'E': e++; break
+        case 'I': i++; break
+        case 'O': o++; break
+        case 'U': u++; break
+    }
+}
+
+consol e.log("A = " + a + "\n" + "E = " + e + "\n" + "I = " + i + "\n" + "O = " + o + "\n" + "U = " + u)/*
+
 //EJERCICIO 9
 /* 9. Escribir un programa que almacene en un array los siguientes precios, 50, 75, 46, 
 22, 80, 65, 8, y muestre por pantalla el menor y el mayor de los precios. */
+
+/* precios = [50, 75, 46, 22, 80, 65, 8]
+
+let precioMayor = Number.MIN_VALUE
+let precioMenor = Number.MAX_VALUE
+for (i = 0; i < precios.length; i++) {
+    console.log(precios[i])
+    if (precios[i] > precioMayor) {
+        precioMayor = precios[i]
+    }
+
+    if (precios[i] < precioMenor) {
+        precioMenor = precios[i]
+    }
+}
+
+alert("Precio menor = " + precioMenor + "\nPrecio mayor = " + precioMayor) */
